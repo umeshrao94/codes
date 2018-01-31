@@ -12,18 +12,13 @@ class testin(Test):
         self.destination = "/root"
         git.get_repo(self.url,destination_dir = self.destination)
 
-    def test(self):
-        self.setUp()
-        print "done"
-        '''   
+    def test(self):  
         subprocess.call(['cd','/root/ltp'])
         print "done"
         subprocess.call(['make','menuconfig'])
         subprocess.call(['make','-j','vmlinux'])
         subprocess.call(['make'])
-        print "done"
         subprocess.call(['make','-j','modules'])
         subprocess.call(['make','-j','modules_install'])
         subprocess.call(['make','install'])
         subprocess.call(['make','clean'])
-        '''
