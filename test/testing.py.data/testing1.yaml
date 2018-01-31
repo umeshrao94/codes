@@ -1,0 +1,4 @@
+testing1: !mux
+    kernel:
+        url: http://ltc-jenkins.aus.stglabs.ibm.com:81/korg/pub_scm_linux_kernel_git_powerpc_linux.git_fixes.tar.gz
+
