@@ -14,11 +14,12 @@ class testin(Test):
 
     def test(self):  
         subprocess.call(['cd','/root/ltp'])
-        print "done"
         subprocess.call(['make','menuconfig'])
         subprocess.call(['make','-j','vmlinux'])
         subprocess.call(['make'])
         subprocess.call(['make','-j','modules'])
         subprocess.call(['make','-j','modules_install'])
         subprocess.call(['make','install'])
+
+   def tearDown(self)
         subprocess.call(['make','clean'])
